@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alekya Mummadi | Portfolio</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f8f4f0;
+            color: #333;
+        }
+        a {
+            color: #5b4e77;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Sticky Navbar Styling */
+        nav {
+            background: #5b4e77;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000; /* Ensures navbar is on top of other content */
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            font-size: 1.2rem;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        header {
+            background: #5b4e77;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 0.5rem 0 0;
+        }
+
+        section {
+            padding: 3rem 1rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        section h2 {
+            font-size: 2rem;
+            color: #5b4e77;
+            margin-bottom: 1rem;
+        }
+        .skills, .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .skill, .project {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33.333% - 1rem);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .skill:hover, .project:hover {
+            transform: translateY(-5px);
+        }
+        .project h3 {
+            font-size: 1.4rem;
+            color: #5b4e77;
+            margin-bottom: 0.5rem;
+        }
+        .project p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: #5b4e77;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+
+        /* Contact Section Styling */
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        input, textarea {
+            padding: 0.8rem;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #5b4e77;
+            box-shadow: 0 0 5px rgba(91, 78, 119, 0.5);
+        }
+        button {
+            background: #5b4e77;
+            color: #fff;
+            border: none;
+            padding: 0.8rem;
+            cursor: pointer;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+        button:hover {
+            background: #483f5a;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="#resume">Resume</a>
+    </nav>
+
+    <header>
+        <h1>Alekya Mummadi</h1>
+        <p>Aspiring Software Developer</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Alekya Mummadi, a passionate and aspiring software developer currently pursuing a Bachelor's degree in Computer Science at Vishwa Vishwani Institution of Systems and Management. I am in my 3rd year and have developed a strong foundation in web development technologies like HTML, CSS, JavaScript, Python Core, and Java Core. I am also interning at ShadowFox, where I am gaining practical experience in the industry, particularly in the MERN stack.</p>
+        <p>Alongside my degree, I am part of the Pragrithi cohort program from Infosys and enrolled in Stundent Tribe -S33, which further fuels my passion for technology. I enjoy learning new technologies, solving problems, and building scalable and efficient applications. My goal is to continue honing my skills, especially in web development, and eventually contribute to impactful projects in the tech industry.</p>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">Html,Css</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Bootstrap</div>
+            <div class="skill">Python Core</div>
+            <div class="skill">Java Core</div>
+            <div class="skill">sql</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Student Dashboard</h3>
+                <p>A dashboard for students created using Django, designed to manage and track their academic progress.</p>
+            </div>
+            <div class="project">
+                <h3>Multithreading File Manager</h3>
+                <p>A Java-based file manager that uses multithreading to handle file operations more efficiently.</p>
+            </div>
+            <div class="project">
+                <h3>NLP Software for Drug Safety</h3>
+                <p>A software application utilizing Natural Language Processing to monitor and ensure drug safety.</p>
+            </div>
+            <div class="project">
+                <h3>This Portfolio</h3>
+                <p>A portfolio website showcasing my projects, skills, and experiences in web development and software development.</p>
+            </div>
+            <div class="project">
+                <h3>Sarovar Hotel Webpage</h3>
+                <p>An interactive webpage designed for the Sarovar Hotel, showcasing its services and offerings. You can check out the live version <a href="https://sarovarhotels.netlify.app/" target="_blank">here</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me for opportunities or collaboration!</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>You can download my resume below:</p>
+        <a href="RESUME.jpg" target="_blank">
+            <button>Download Resume</button>
+        </a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Alekya Mummadi. All rights reserved.</p>
+    </footer>
+</body>
+</html>
